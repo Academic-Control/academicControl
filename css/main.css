@@ -1,56 +1,95 @@
-html {
-	background-image: url('');
-	background-repeat: no-repeat;
-	background-size: cover;
+
+body {
+  font-family: arial;
+  font-size: 18px;
 }
 
-body { 
-  font-family: arial, sans-serif;
-  font-size: 14px; 
-} 
-
-.menu { 
-  list-style:none; /*Tira o índice da lista */
+.menu {
+  list-style: none;
+  /*Tira o índice da lista */
+  
 }
 
 .list {
-  position:relative; 
-  float:left; 
-  border:1px solid #c0c0c0; 
-  width: 16%; 
+  position: relative;
+  float: left;
+  border: 1px solid #c0c0c0;
+  width: 16%;
   text-align: center;
 }
 
-.anchor{ /*Formatação do link*/
-  color:black; 
-  background:white;
-  text-decoration:none; 
-  padding:5px 10px; 
-  display:block;
-}
- 
-.anchor:hover{ /*Formartação do link*/
-  background:#0088CE;
-  color:#fff;
-  text-shadow:0px 0px 10px #fff;
+.anchor {
+  /*Formatação do link*/
+  color: black;
+  background: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
 }
 
-.list:hover ul, .menu li.over ul{ /*Exibir menu quando passar por cima */
-  display:block;
+.anchor:hover {
+  /*Formartação do link*/
+  
+  background: #E6C8D1;
+  color: #fff;
+  text-shadow: 0px 0px 10px #fff;
+  transition:.15s ease; 
+  
+}
+
+.list:hover ul,
+.menu li.over ul {
+  /*Exibir menu quando passar o mouse por cima */
+  position:absolute;
+  display: block;
+  width:100%;
+  padding: 0px 10% 10% 10%;
+  
+  
+  
 }
 
 .submenu {
-  position:absolute;
-  display:none;
-}  
+  position: absolute;
+  display: none;
+  
+}
 
 .sub {
-  display:block; 
-  width:100%;
-  float:left; 
-  border:1px solid #c0c0c0; 
+  display: block;
+  width: 80%;
+  float: left;
+  border: 1px solid #c0c0c0;
   text-align: center;
+  
 }
+.sub:hover {
+  transform: scale(1.1);
+}
+
+
+section {
+	display:none;
+	transition: all 0.5s;
+}
+
+section:target {
+	display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

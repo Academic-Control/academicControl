@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+     <link rel="stylesheet" type="text/css" href="css">
+<title> Cadastro Aluno </title> 
+   
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.maskedinput.js"></script>
+    
+</head>
+<script type="text/javascript">
+ $(document).ready(function(){
+   $("input.data").mask("99/99/9999");
+   $("input.cpf").mask("999.999.999-99");
+   $("input.cep").mask("99.999-999");
+   $("input.rg").mask("99.999.999");
+   $("input.tel").mask("(99)9999-9999");
+                      
+});
+</script>
+    
+<body>
+    
+    <form action="">
+    <fieldset>
+        <legend>Cadastro Aluno </legend>
+        
+   <label for="nome"> Nome: </label><br>
+    <input type="text" name="nome" id="nome" size="30" placeholder="nome"><br/>
+        
+    <label for="cpf"> Cpf: </label><br/>
+     <input type="text" class="cpf" name="cpf" id="cpf"><br />
+        
+   <label for="sexo">Sexo: </label>
+    <select title="Sexo: " name="sexo" id="sexo">
+     <option value="">Please Select ... </option>
+     <option value="FEMININO">FEMININO</option>
+     <option value="MASCULINO">MASCULINO</option>
+   </select><br/>
+        
+   <label for="datanascimento">Data de Nascimento: </label><br/>
+    <input type="date" class="datanascimento" name="datanascimento"><br/>
+    
+    <label for="tel">Tel: </label><br/>
+     <input  type="text" class="tel" name="tel"><br/>
+   
+   <label for="email">Email: </label><br/>
+    <input type="text" class="email" name="email" id="email"><br />
+ <br />  
+        
+   
+   
+        
+    <input type="submit" name="submit" value="Cadastrar" class="botao">
+     
+    </fieldset>
+    </form>
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+</html>

@@ -1,0 +1,28 @@
+.cadastro fieldset{
+   display: block;
+    float: none;
+    position: relative;
+    margin-top: 70px;
+    margin-left: auto;
+    
+
+
+}
+.cadastro label{
+ padding: 10px;   
+}
+
+
+
+label{
+  display: block;
+    
+    
+}
+
+.cadastro {
+  
+  width: 30%;
+  margin-right: 100px;
+  margin-top: 50px; 
+}
