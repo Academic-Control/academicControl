@@ -7,13 +7,10 @@
      <title>Cadastro Aluno </title>
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href="js/mask.js">
-    
-    </head>
-    
-    
-    
-    
+        
+        <script type="text/javascript" src="js/validacao_cpf.js"> </script>
+        </head> 
+      
     <body>
        
         <div>
@@ -42,8 +39,9 @@
         </ul>
       </li>
        
-  </div>
-        <div class="cadastro">
+  </div>     
+	
+	<div class="cadastro">
             <form> 
         <fieldset>
           <legend>Cadastro Aluno</legend>
@@ -51,14 +49,14 @@
             
             <label>
                   <span> Nome: </span>
-                  <input type="text" class="input_text" name="nome" id="nome" placeholder="Nome" />
+                  <input name="nome" required="required" type="text" placeholder="Nome" />
                 
             </label>
           
             <label>
                 
                 <span>CPF </span>
-                <input type="text" class="input_text" name="cpf" id="cpf" />
+                <input type="text" name="cpf" id="cpf" onblur="javascript: validarCPF(this.value);" onkeypress="javascript: mascara(this, cpf_mask);"  maxlength="14" />
                 
             </labeL>
             
@@ -75,24 +73,25 @@
             <label>
                 
                 <span> Data Nascimento</span>
-                <input  type="date" class="input_text" name="dataNascimento" id="dataNascimento"placeholder="dd/mm/aaaa" />
+                <input  type="date" class="input_text" name="dataNascimento" id="dataNascimento" placeholder="dd/mm/aaaa"/>
           </label>
-            
+    
             <label>
                 
                 <span> Telefone </span>
-                <input type="text" class="input_text" name="telefone" id="telefone" placeholder="(00)0000-0000" />
+                <input type="tel"  name="telefone" id="telefone" placeholder="(00)0000-0000" />
                 
                   </label>
             
             <label>
                 
                 <span> Email </span>
-                <input type="text" class="input_text" name="email" id="email" placeholder="nomeusuario@usuario.com.br"/>
+                <input type="email" class="input_text" name="email" id="email" placeholder="nomeusuario@usuario.com.br"/>
                 
             
             
             </label>
+            
             
            <input type="button" class="button" value="Cadastro" />
           
@@ -102,7 +101,6 @@
           
 </div>
  </form>
-    </body>
     
     
 </html>

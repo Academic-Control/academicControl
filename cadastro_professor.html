@@ -9,6 +9,8 @@
      <title>Cadastro Professor </title>
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/main.css">
+        
+           <script type="text/javascript" src="validacao_cpf.js"></script>
     
     </head>
     
@@ -57,7 +59,7 @@
             <label>
                 
                 <span>CPF </span>
-                <input type="text" class="input_text" name="cpf" id="cpf" />
+                <input type="text" name="cpf" id="cpf" onblur="javascript: validarCPF(this.value);" onkeypress="javascript: mascara(this, cpf_mask);"  maxlength="14" />
                 
             </labeL>
             
